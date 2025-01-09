@@ -1,4 +1,4 @@
-name: Invoke Organization Template
+name: Invoke Organization Template example
 
 on:
   workflow_dispatch:
