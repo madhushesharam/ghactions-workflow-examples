@@ -10,5 +10,4 @@ jobs:
   invoke-template:
     uses: madhushesharam/.github/.github/workflows/sample-init.yml@main
     with:
-      MANDATORY_PARAM: "Custom Mandatory Value"
       OPTIONAL_PARAM: "Custom Optional Value"
