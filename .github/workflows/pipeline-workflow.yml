@@ -1,0 +1,14 @@
+name: Invoke Organization Template
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  invoke-template:
+    uses: madhushesharam/.github/.github/workflows/sample-init.yml@main
+    secrets:
+      MANDATORY_PARAM: ${{ secrets.MANDATORY_PARAM }}
+      OPTIONAL_PARAM: ${{ secrets.OPTIONAL_PARAM }}
