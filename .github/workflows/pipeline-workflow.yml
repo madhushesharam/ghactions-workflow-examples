@@ -9,6 +9,6 @@ on:
 jobs:
   invoke-template:
     uses: madhushesharam/.github/.github/workflows/sample-init.yml@main
-    secrets:
-      MANDATORY_PARAM: ${{ secrets.MANDATORY_PARAM }}
-      OPTIONAL_PARAM: ${{ secrets.OPTIONAL_PARAM }}
+    with:
+      MANDATORY_PARAM: "Custom Mandatory Value"
+      OPTIONAL_PARAM: "Custom Optional Value"
